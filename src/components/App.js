@@ -24,6 +24,7 @@ class App extends React.Component {
       })
       .then((res) => {
         this.setState({ data: res.data.businesses });
+        
       })
       .catch((err) => {
         console.log(err);

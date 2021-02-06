@@ -5,8 +5,14 @@ class BusinessesList extends React.Component{
     
     constructor(props){
         super(props)
-        this.state = {data:props.data};
-        console.log(this.state.data)
+        
+        console.log(this.props.data)
+    }
+
+    componentDidMount(){
+        const businesses=this.props.data.map((business)=>{
+            return <div>{business} </div>
+        })
     }
 
     render(){
